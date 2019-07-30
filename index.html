@@ -1,0 +1,185 @@
+<html>
+<head>
+
+<title>Midwesterninteractive Benchmark</title>
+
+<style>
+<!-- BEGINNING OF HEADING FORMAT -->
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {font-size: 12px}
+<!-- END OF HEADING FORMAT -->
+
+<!-- BEGINNING OF CONTACT FORMAT -->
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0000000;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+<!-- END OF CONTACT FORMAT -->
+</style>
+
+<!-- WEBPAGE STARTS HERE -->
+</head>
+<body>
+<!-- WEBPAGE NAME -->
+<h1 align="center">Midwestern Interactive<h1>
+<hr>
+
+<!-- HEADINGS -->
+<h1><u>HEADING ONE</u></h1>
+
+<div class="clearfix">
+	<div class="box" style="backgroud-color:#bbb">
+	<h2>Heading 2</h2>
+	<p>
+	This is a paragraph text that is meant to flex
+	and wrap to a new line based on the number of characters
+	in this container. Please make sure this is looking
+	pretty based on the amount of characters this is taking up.
+	</p>
+	<button class="button button1">Read More</button>
+	</div>
+	
+	<div class="box" style="backgroud-color:#bbb">
+	<h2>Heading 2</h2>
+	<p>
+	This is a paragraph text that is meant to flex
+	and wrap to a new line based on the number of characters
+	in this container. Please make sure this is looking
+	pretty based on the amount of characters this is taking up.
+	</p>
+	<button class="button button1">Read More</button>
+	</div>
+	
+	<div class="box" style="backgroud-color:#bbb">
+	<h2>Heading 2</h2>
+	<p>
+	This is a paragraph text that is meant to flex
+	and wrap to a new line based on the number of characters
+	in this container. Please make sure this is looking
+	pretty based on the amount of characters this is taking up.
+	</p>
+	<button class="button button1">Read More</button>
+	</div>
+</div>
+
+<!-- CONTACT FORM -->
+<hr>
+<h1 align="center">CONTACT</h1>
+
+<div class="container">
+  <form action="index.html">
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" placeholder="Your Email.." required>
+	<br>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject Title.." required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- JAVASCRIPT PUZZLE -->
+<hr>
+<h1><u>HEADING ONE</u></h1>
+<p>
+Remove the duplicates in 2 Javascript objects and output 
+the list of distinct names in an unordered list when 
+this <a href="javascript:myfunction()" style="color:red;"><b>link is clicked</b></a>, if the operation is completed already
+notify the user that this has already been done.
+</p>
+
+<script>
+
+var object1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Michael Spangler"];
+var object2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles"];
+
+function myfunction() {
+
+	var object3 = merge(object1, object2);
+	alert(object3);
+
+}
+
+function merge(arr1, arr2){
+
+	var result = [];
+	var arr = arr1.concat(arr2);
+	var len = arr.length;
+	var assoc = {};
+	
+	while(len--) {
+		var item = arr[len];
+		
+		if(!assoc[item])
+		{
+			result.unshift(item);
+			assoc[item] = true;
+		}
+	}
+	
+	return result;
+	}
+
+</script>
+
+</body>
+</html>
